@@ -1,0 +1,43 @@
+.login-screen-container {
+    text-shadow: 10px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #DE6262;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFB88C, #DE6262);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFB88C, #DE6262); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+  
+  .login-screen-container button {
+    width: 40vh;
+    margin-top: 1vh;
+    background-color: antiquewhite;
+  }
+  .login-screen-container input {
+    width: 40vh;
+    padding: 1vh;
+    background-color: #FFEEEE;
+  }
+  
+  .login-title {
+    font-size: 7vh;
+    font-weight: bold;
+    border-radius: 13px;
+  }
+  
+  .register-button {
+      margin-top: 10vh !important;
+      font-size: 2.5vh;
+      font-weight: bold;
+      border-radius: 13px;
+      
+  }
+  .login-button {
+    margin-top: 10vh;
+    font-size: 2.5vh;
+    font-weight: bold;
+    border-radius: 13px;
+    
+}
