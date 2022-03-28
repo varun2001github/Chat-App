@@ -1,0 +1,17 @@
+.navigation{
+    display:flex;
+    background-color: rgb(158, 175, 175);
+    min-height:10vh;
+    justify-content: space-evenly;
+}
+.logout-btn{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    list-style: none;
+}
+.bclass{
+    padding-top: 25px;
+    padding-left: 65%;
+}

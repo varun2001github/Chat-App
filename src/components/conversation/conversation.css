@@ -1,0 +1,20 @@
+.chat-key{
+    padding-left: 10%;
+    padding-top: 50%;
+    scroll-behavior: auto;
+}
+.input-msg{
+    width: 19cm;
+    height: 5vh;
+    font-size: medium;
+    border-width: 0.2cm;
+    border-radius: 2vh;
+    border-color: rgb(231, 183, 123);
+}
+.chat-button{
+    height: 5vh;
+    padding-left: 1%;
+}
+.chat-heading{
+    height: fit-content;
+}

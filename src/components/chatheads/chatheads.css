@@ -1,0 +1,26 @@
+/* .conv-header-container svg {
+    margin-left: 0.5vh;
+    color: white;
+    background-color: rgb(112, 110, 110, 0.2);
+    padding: 0.8vh;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .conversations-header {
+    font-weight: bold;
+    font-size: 2.5vh;
+    margin-bottom: 1vh;
+  } */
+  .chat-head-main{
+    padding-left: 4vh;
+
+  }
+  .chat-head-items:hover{
+    background-color: bisque;
+  }
+  .chat-head-items{
+    display: flex;
+    align-items: center;
+    cursor:pointer;
+  }
+ 
