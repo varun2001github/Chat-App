@@ -15,10 +15,10 @@ export default function LoginScreen({ setUser }) {
     const myPassword = password.current.value;
 
     try {
-      const responseFromAuth = await createUserWithEmailAndPassword(
-        auth,
-        myEmail,
-        myPassword
+       const responseFromAuth = await createUserWithEmailAndPassword(
+         auth,
+         myEmail,
+         myPassword
       );
       const userId = responseFromAuth.user.uid;
       // saving to firestore

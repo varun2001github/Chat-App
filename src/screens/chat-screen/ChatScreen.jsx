@@ -33,13 +33,12 @@ export default function ChatScreen({ setUser, user }){
       );
     })();
   }, [user]);
-  console.log(chatHeads);
   return (
-   <div class="chat-screen">
-     <div class="chat-head">
+   <div className="chat-screen">
+     <div className="chat-head">
         <ChatHeads items={chatHeads} setReceiver={setReceiver}/>
      </div>
-     <div class="conversation">
+     <div className="conversation">
          <Conversation receiver={receiver} user={user}/>
      </div>
    </div>

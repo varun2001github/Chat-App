@@ -1,10 +1,11 @@
 .chat-key{
     padding-left: 10%;
-    padding-top: 50%;
+    padding-top: 2%;
+    height: min-content;
     scroll-behavior: auto;
 }
 .input-msg{
-    width: 15cm;
+    width: 18cm;
     height: 5vh;
     font-size: medium;
     border-width: 0.2cm;
@@ -17,4 +18,19 @@
 }
 .chat-heading{
     height: fit-content;
+}
+/* .conversation-main{
+    
+} */
+.messages-section{
+    background-color: rgb(255, 249, 234);
+    width: 1000px;
+    height: 500px;
+    overflow: scroll;
+    overflow-y: visible;
+    scroll-behavior: smooth;
+    float: inline-end;
+}
+.chats{
+    padding-left: 90%;
 }
