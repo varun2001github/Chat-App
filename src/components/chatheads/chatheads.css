@@ -13,10 +13,9 @@
   } */
   .chat-head-main{
     padding-left: 4vh;
-
   }
   .chat-head-items:hover{
-    background-color: bisque;
+    background-color: rgb(203, 197, 190);
   }
   .chat-head-items{
     display: flex;

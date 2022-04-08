@@ -30,16 +30,17 @@
     overflow-y: visible;
     scroll-behavior: smooth;
     float: inline-end;
-    /* display:flex-end; */
+    padding: 20px;
 }
 .chat-bubble{
-    background-color: rgb(74, 151, 233);
-    width: max-content;
-    margin-bottom: 3px;
-    border-radius: 5px;
+    background-color: rgb(33, 91, 152);
+    min-width: 9vh;
+    margin-bottom: 10px;
+    border-radius: 10px;
     color:white;
-    font-size: larger;
+    font-size: medium;
+    padding: 1vh;
 }
-.chats{
-    padding-left: 90%;
+.message{
+    display:flex;
 }

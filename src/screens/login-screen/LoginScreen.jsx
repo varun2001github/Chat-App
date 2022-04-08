@@ -60,7 +60,7 @@ export default function LoginScreen({ setUser }) {
       const userId = responseFromAuth.user.uid;
 
       // save user to localstorage
-      localStorage.setItem(  "user",JSON.stringify ( { email: myEmail , uid: userId,} )  );
+      localStorage.setItem( "user",JSON.stringify ( { email: myEmail , uid: userId,} )  );
 
       // set user as active in app
       setUser({
