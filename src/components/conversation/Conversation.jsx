@@ -1,6 +1,7 @@
 import React, { useState,useEffect,useRef} from 'react';
 import './conversation.css';
-import { Button,Avatar,SendIcon} from '@mui/material';
+import { Button,Avatar} from '@mui/material';
+import SendSharpIcon from '@mui/icons-material/SendSharp';
 import { db } from '../../firebase';
 import {doc, getDoc, updateDoc, setDoc,onSnapshot} from "@firebase/firestore";
 
@@ -8,7 +9,7 @@ export default function Conversation({receiver,user}) {
     const [conversationid,setConversationid]=useState(null);
     const [messages,setMessages]=useState([]);
     const currentMessages=useRef(null);
-    
+    const scrollref = useRef(null);
     //handle sending messages
     async function sendmessage(){
       console.log(receiver);
@@ -60,6 +61,18 @@ export default function Conversation({receiver,user}) {
         );
         return unsub;
     },[conversationid]);
+
+    //Enter key press
+    const handleEnterKeyPressDown = (e) => {
+      if ((e.code === "Enter" || e.key === "Enter") && !e.shiftKey) {
+        sendmessage();
+      }
+    };
+
+    // scroll after each message
+    React.useEffect(() => {
+      scrollref.current?.scrollIntoView({ behavior: "smooth" });
+    }, [messages]);
     
   return(
   <div className='conversation-main'>
@@ -79,11 +92,12 @@ export default function Conversation({receiver,user}) {
                <div className='chat-bubble'>{obj.message}</div>
             </div>))
         }
+        <div ref={scrollref}/>
       </div>
         <div class='chat-key'>
-          <input placeholder='Enter the message' className="input-msg" ref={currentMessages}/>
+          <input placeholder='Enter the message' onKeyDown={handleEnterKeyPressDown} className="input-msg" ref={currentMessages}/>
           <span className="chat-button">
-            <Button type="submit" variant="contained" onClick={sendmessage}>send</Button>
+            <Button type="submit" variant="contained" onClick={sendmessage} endIcon={<SendSharpIcon/>}>send</Button>
           </span>
         </div>
     </div>

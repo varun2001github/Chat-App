@@ -2,10 +2,12 @@
     display:flex;
     background-color: rgb(158, 175, 175);
     min-height:10vh;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    padding-left: 30px;
 }
 .logout-btn{
     display:flex;
+    flex: 10px;
     justify-content: space-around;
     align-items: center;
     width:100%;
