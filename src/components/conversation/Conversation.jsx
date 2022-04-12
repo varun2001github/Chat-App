@@ -78,18 +78,18 @@ export default function Conversation({receiver,user}) {
   <div className='conversation-main'>
     {receiver?(
       <div>
-      <div class="chat-heading"><h3>Chat with {receiver.email}</h3></div>
+      <div class="chat-heading"><div className='conv-header'>Chat with {receiver.email}</div></div>
       <div className='chat-messages'></div>
       </div>
       ):(
-            <div>SELECT SOMEONE TO CHAT</div>
+            <div className='conv-header'>SELECT SOMEONE TO CHAT</div>
       )}
       <div className='messages-section'>
         { 
            messages.map((obj,i)=>(          
             <div key={i} className="message" style={{justifyContent: obj.uid===user.uid && "flex-end"}} >
-               {obj.uid===user.uid?<Avatar color="blue">{user.email[0]}</Avatar>:<Avatar >{receiver.email[0]}</Avatar>}
-               <div className='chat-bubble'>{obj.message}</div>
+               {obj.uid===user.uid?<Avatar InputLabelProps={{className:"av1"}} sx={{bgcolor:'warning.main'}}>{user.email[0]}</Avatar>:<Avatar sx={{bgcolor:'success.main'}} >{receiver.email[0]}</Avatar>}
+               <div className='chat-bubble'>{obj.uid===user.uid?<div className='user-chats'>{obj.message}</div>:<div className='reciever-chats'>{obj.message}</div>}</div>
             </div>))
         }
         <div ref={scrollref}/>

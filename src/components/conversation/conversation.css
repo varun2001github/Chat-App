@@ -19,9 +19,10 @@
 .chat-heading{
     height: fit-content;
 }
-/* .conversation-main{
-    
-} */
+.conv-header{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
 .messages-section{
     background-color: rgb(255, 249, 234);
     width: 1000px;
@@ -31,10 +32,12 @@
     scroll-behavior: smooth;
     float: inline-end;
     padding: 20px;
+    border: 3px;
+    border-style: outset;
 }
 .chat-bubble{
-    background-color: rgb(33, 91, 152);
     min-width: 9vh;
+    max-width: 10cm;
     margin-bottom: 10px;
     border-radius: 10px;
     color:white;
@@ -43,4 +46,33 @@
 }
 .message{
     display:flex;
+}
+avatar{
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    margin-right: 1vh;
+    color: rgb(219, 140, 76);
+}
+.av1{
+    color: rgb(218, 197, 179);
+}
+.user-chats{
+    background-color:rgb(71, 141, 216) ;
+    min-width: 9vh;
+    max-width: 10cm;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    font-size: medium;
+    padding: 1vh;
+}
+.reciever-chats{
+    color: black;
+    background-color:rgb(228, 224, 220);
+    min-width: 9vh;
+    max-width: 10cm;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    font-size: medium;
+    padding: 1vh;
 }

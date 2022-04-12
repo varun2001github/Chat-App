@@ -13,6 +13,7 @@
 .chat-head {
     width: 30%;
     background-color: rgb(226, 239, 235);
+    border: 2px solid rgb(112, 110, 110, 0.2);
   }
 /* h1{
   text-align: center;

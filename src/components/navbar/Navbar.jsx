@@ -14,10 +14,10 @@ function Navbar({user,setUser}) {
     <div>
      {user?(
       <div class="navigation">
-        <h2>welcome,{user.email}</h2>
-       <div class="bclass">
-       <Button class="logout-btn" onClick={signout} endIcon={<LogoutIcon/>} >Log out</Button>
-       </div>
+          <h3>welcome,{user.email}</h3>
+          <div class="bclass">
+          <Button class="logout-btn" onClick={signout} endIcon={<LogoutIcon/>} >Log out</Button>
+          </div>
       </div>
        ):(
       <div>
